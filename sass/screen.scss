@@ -7,13 +7,24 @@
 
 
 body {
-	color: red;
+	color: blue;
 
-	#hallo {
-		color: blue;
+	#mainframe {
+		background-color: blue;
+		#header {
+			background-color: red;
 
-		a {
-			color: green;
+			#flame-animation {
+				display: none;
+			}
+
+			h1 {
+				display: none;
+			}
 		}
+	}
+
+	#navi {
+		background-color: purple;
 	}
 }
