@@ -1,0 +1,267 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+   * Apply the .container class from Bootstrap
+   */
+body #mainframe {
+  /**
+  * Contains all styles for a simple article
+  *
+  */
+  /**
+  * Style for separation line
+  */ }
+  body #mainframe header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    body #mainframe header:before, body #mainframe header:after {
+      content: " ";
+      display: table; }
+    body #mainframe header:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      body #mainframe header {
+        width: 750px; } }
+    @media (min-width: 992px) {
+      body #mainframe header {
+        width: 970px; } }
+    @media (min-width: 1200px) {
+      body #mainframe header {
+        width: 1170px; } }
+    body #mainframe header #flame-animation {
+      display: none; }
+    body #mainframe header .logo {
+      text-align: center; }
+      body #mainframe header .logo h1 {
+        display: none; }
+      @media print {
+        body #mainframe header .logo {
+          text-align: left; }
+          body #mainframe header .logo img {
+            height: 100px; } }
+  @media screen {
+    body #mainframe nav {
+      padding-bottom: 20px; }
+      body #mainframe nav ul {
+        margin-left: -15px;
+        margin-right: -15px; }
+        body #mainframe nav ul:before, body #mainframe nav ul:after {
+          content: " ";
+          display: table; }
+        body #mainframe nav ul:after {
+          clear: both; }
+        body #mainframe nav ul li {
+          height: 200px;
+          padding-top: 80px;
+          text-align: center;
+          background-position: cover;
+          background-repeat: no-repeat; } }
+      @media screen and (max-width: 768px) {
+        body #mainframe nav ul li {
+          height: 100px;
+          padding-top: 30px; } }
+  @media screen {
+          body #mainframe nav ul li#navi-container-long {
+            background-image: url("../images/placeholder.jpg"); }
+          body #mainframe nav ul li#navi-container-small1 {
+            background-image: url("../images/placeholder.jpg"); }
+          body #mainframe nav ul li#navi-container-small2 {
+            background-image: url("../images/placeholder.jpg"); }
+          body #mainframe nav ul li#navi-container-small3 {
+            background-image: url("../images/placeholder.jpg"); }
+        body #mainframe nav ul.big li {
+          position: relative;
+          min-height: 1px;
+          padding-left: 0;
+          padding-right: 0; } }
+      @media screen and (min-width: 1200px) {
+        body #mainframe nav ul.big li {
+          float: left;
+          width: 100%; } }
+  @media screen {
+        body #mainframe nav ul.small li {
+          position: relative;
+          min-height: 1px;
+          padding-left: 0;
+          padding-right: 0;
+          position: relative;
+          min-height: 1px;
+          padding-left: 0;
+          padding-right: 0; } }
+      @media screen and (min-width: 992px) {
+        body #mainframe nav ul.small li {
+          float: left;
+          width: 33.33333%; } }
+      @media screen and (min-width: 1200px) {
+        body #mainframe nav ul.small li {
+          float: left;
+          width: 33.33333%; } }
+
+  body #mainframe section.content-typ-2 {
+    background-color: #333230;
+    color: #ffffff;
+    font-weight: bolder; }
+  body #mainframe article {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    body #mainframe article:before, body #mainframe article:after {
+      content: " ";
+      display: table; }
+    body #mainframe article:after {
+      clear: both; }
+    @media (min-width: 768px) {
+      body #mainframe article {
+        width: 750px; } }
+    @media (min-width: 992px) {
+      body #mainframe article {
+        width: 970px; } }
+    @media (min-width: 1200px) {
+      body #mainframe article {
+        width: 1170px; } }
+    body #mainframe article #flame-animation {
+      display: none; }
+    body #mainframe article .right {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0; }
+      @media (min-width: 768px) {
+        body #mainframe article .right {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        body #mainframe article .right {
+          float: left;
+          width: 75%; } }
+      @media (min-width: 1200px) {
+        body #mainframe article .right {
+          float: left;
+          width: 75%; } }
+    body #mainframe article .left {
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      /**
+      *
+      * Example for lg screens: $container-lg/$grid-columns*3-10 =>   1200  /   12  *   3                   -10
+      *                                                              [Column width ]    emmit make-row(3)   Because some place for margin
+      */ }
+      @media (min-width: 992px) {
+        body #mainframe article .left {
+          float: left;
+          width: 25%; } }
+      @media (min-width: 1200px) {
+        body #mainframe article .left {
+          float: left;
+          width: 25%; } }
+      @media (min-width: 768px) {
+        body #mainframe article .left img {
+          max-width: 177.5px; } }
+      @media (min-width: 992px) {
+        body #mainframe article .left img {
+          max-width: 232.5px; } }
+      @media (min-width: 1200px) {
+        body #mainframe article .left img {
+          max-width: 282.5px; } }
+    @media (max-width: 991px) {
+      body #mainframe article aside {
+        display: none; } }
+    body #mainframe article h2 {
+      font-size: 2em;
+      font-weight: bold; }
+  body #mainframe div.separator-star {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: #580000;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    text-align: center; }
+    body #mainframe div.separator-star i {
+      position: relative;
+      top: -19px;
+      font-size: 75px;
+      color: #960001; }
+    body #mainframe div.separator-star :before {
+      display: block;
+      content: '';
+      margin-top: 20px; }
+    body #mainframe div.separator-star :after {
+      display: block;
+      content: '';
+      margin-bottom: 20px; }

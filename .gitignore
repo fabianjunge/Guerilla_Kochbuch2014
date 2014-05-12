@@ -1,0 +1,21 @@
+#Ignore Webstorm
+
+.idea/
+
+
+#Ignore Mimosa
+
+.mimosa/
+
+#Ignore NPM
+
+node_modules/
+
+public/images/
+
+public/stylesheet/
+public/javascripts/
+public/.DS_Store
+views/
+
+.DS_Store
