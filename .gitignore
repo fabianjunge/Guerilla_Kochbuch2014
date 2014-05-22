@@ -1,21 +1,51 @@
 #Ignore Webstorm
-
 .idea/
 
-
 #Ignore Mimosa
-
 .mimosa/
+.sass-cache/
+/.mimosa
+/coverage
+/rdoc
+/wiki
+/packaging
+npm-debug.log
+*.tmproj
+azure_error
+what
+*.sublime-workspace
 
 #Ignore NPM
-
-node_modules/
+/.node_modules/
+/node_modules
 
 public/images/
-
-public/stylesheet/
+public/stylesheets/
+public/stylesheets/**
 public/javascripts/
+public/javascripts/**
 public/.DS_Store
 views/
 
+# Numerous always-ignore extensions
+*~
+*.diff
+*.patch
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# OS or Editor folders
 .DS_Store
+.cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
