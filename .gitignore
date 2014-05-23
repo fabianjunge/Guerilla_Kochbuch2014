@@ -19,14 +19,8 @@ what
 /.node_modules/
 /node_modules
 
-public/images/
 public/stylesheets/
 public/stylesheets/**
-public/javascripts/
-public/javascripts/**
-public/.DS_Store
-public/**
-
 
 # Numerous always-ignore extensions
 *~
