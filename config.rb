@@ -4,8 +4,8 @@
 http_path = "public/index.html"
 css_dir = "public/stylesheets"
 sass_dir = "assets/stylesheets"
-images_dir = "assets/images"
-javascripts_dir = "assets/javascripts"
+images_dir = "public/images"
+javascripts_dir = "public/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compressed
