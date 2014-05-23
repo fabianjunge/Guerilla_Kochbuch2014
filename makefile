@@ -6,7 +6,6 @@ build = mimosa build
 start:
 	@echo "[x] Building assets and starting development server..."
 	@$(watch) -s
-	open /Applications/Google\ Chrome.app/ --args --disable-web-security
 
 startd:
 	@echo "[x] Cleaning compiled directory, building assets and starting development server.."
