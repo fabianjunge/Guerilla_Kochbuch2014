@@ -6,6 +6,9 @@
 @import "vendor/bootstrap/mixins";
 @import "variables";
 
+@import url("http://fonts.googleapis.com/css?family=Stardos+Stencil:400,700");
+@import url("http://fonts.googleapis.com/css?family=PT+Serif:400,700");
+
 
 /**
    * Apply the .container class from Bootstrap
@@ -30,15 +33,25 @@ body {
   background-position: center 0px;
   background-repeat: none;
 
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 30px;
 
 
   h2 {
+    font-family: 'Stardos Stencil', cursive;
+
     font-size: 40px;
     line-height: 45px;
     font-weight: bold;
     margin-bottom: 20px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   #mainframe {
@@ -128,8 +141,20 @@ body {
           padding-top: 20px;
           padding-bottom: 20px;
 
+          @media (max-width: $screen-sm-min) {
+            background-color: green;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
           h2 {
             line-height: 30px;
+          }
+
+          p {
+            text-shadow: 2px 0px 4px #000;
+            font-size: 25px;
+            line-height: 35px;
           }
         }
       }
@@ -141,9 +166,22 @@ body {
         background-image: url('../images/guerilla_kochbuch_bg_content-typ2.jpg');
         background-position: center top;
 
+        article {
+
+          @media (max-width: $screen-sm-min) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
         h2 {
           color: #7d0d0d;
            text-transform: uppercase;
+        }
+
+        h3 {
+          font-family: 'Stardos Stencil', cursive;
+          font-size: 28px;
         }
 
         .makings {
@@ -191,7 +229,7 @@ body {
             margin-left: auto;
             margin-right: auto;
 
-            opacity: .8;
+            opacity: .9;
           }
 
           @media (min-width: $screen-sm-min) {
