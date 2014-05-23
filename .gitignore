@@ -25,7 +25,8 @@ public/stylesheets/**
 public/javascripts/
 public/javascripts/**
 public/.DS_Store
-views/
+public/**
+
 
 # Numerous always-ignore extensions
 *~
