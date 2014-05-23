@@ -22,17 +22,24 @@
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
-  #flame-animation {
-    display: none;
-  }
 }
 
 
 body {
   background-image: url('../images/guerilla_kochbuch_bg_content-typ1.jpg');
-  background-size: contain;
+  background-position: center 0px;
+  background-repeat: none;
 
   font-size: 20px;
+  line-height: 30px;
+
+
+  h2 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
   #mainframe {
     header {
@@ -42,12 +49,17 @@ body {
         h1 {
           display: none;
         }
+
         img {
           height: 200px;
           width: 200px;
         }
         text-align: center;
         //Change size of the logo if the page is printed
+      }
+
+      #flame-animation {
+        display: none;
       }
     }
 
@@ -108,10 +120,37 @@ body {
     }
 
     section {
+
+      &.contain-typ-1 {
+        padding-top: 20px;
+
+        article {
+          padding-top: 20px;
+          padding-bottom: 20px;
+
+          h2 {
+            line-height: 30px;
+          }
+        }
+      }
+
       &.content-typ-2 {
-        background-color: $guerilla-section-first-dish-bg;
-        color:#ffffff;
-        font-weight: bolder;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        background-image: url('../images/guerilla_kochbuch_bg_content-typ2.jpg');
+        background-position: center top;
+
+        h2 {
+          color: #7d0d0d;
+           text-transform: uppercase;
+        }
+
+        .makings {
+          padding-left: 20px;
+          list-style-image: url('../images/guerilla_kochbuch_listicon.svg');
+        }
+
       }
     }
 
@@ -122,6 +161,7 @@ body {
     article {
       @include make-container-fluid;
 
+      padding-bottom: 30px;
       color: white;
       padding: 0px;
 
@@ -129,13 +169,13 @@ body {
       .right {
         @include make-xs-column(12, 0);
         @include make-sm-column(12, 0);
-        @include make-md-column(9, 0);
-        @include make-lg-column(9, 0);
+        @include make-md-column(7, 0);
+        @include make-lg-column(7, 0);
       }
 
       .left {
-        @include make-md-column(3, 0);
-        @include make-lg-column(3, 0);
+        @include make-md-column(5, 0);
+        @include make-lg-column(5, 0);
 
         //Responsive image width
         /**
@@ -144,7 +184,15 @@ body {
         *                                                              [Column width ]    emmit make-row(3)   Because some place for margin
         */
         img {
-          width: 100%;
+          //width: 80%;
+
+          &.content-icon-fist {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            opacity: .8;
+          }
 
           @media (min-width: $screen-sm-min) {
             max-width: $container-sm/$grid-columns*3-10;
@@ -161,14 +209,11 @@ body {
 
       //Image or some other aditional information
       aside {
+        margin: 0px;
+
         @media (max-width: $screen-sm-max) {
           display: none;
         }
-      }
-
-      h2 {
-        font-size: 2em;
-        font-weight: bold;
       }
     }
 
@@ -177,39 +222,20 @@ body {
     /**
     * Style for separation line
     */
-    div {
+    .separator-star {
+      width: 100%;
+      height: 15px;
+      background-color: $guerilla-separator-star-bg;
 
-      //A simple star in the middle of the page
-      &.separator-star {
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
         position: relative;
-        left: 0px;
-        right: 0px;
-        width: 100%;
-        height: 30px;
-        background-color: $guerilla-separator-star-bg;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        border-bottom-color: $guerilla-separator-star-border;
-        text-align: center;
-          i {
-            position: relative;
-            top: -19px;
-            font-size: 75px;
-            color: $guerilla-separator-star-color;
-          }
-
-        :before {
-          display: block;
-          content: '';
-          margin-top: 20px;
-        }
-        :after {
-          display: block;
-          content: '';
-          margin-bottom: 20px;
-        }
-
+        top: -25px
       }
     }
+    
   }
 }
