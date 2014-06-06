@@ -86,6 +86,7 @@ body {
 
         //Global properties for alle entrys in the nav
         li {
+          position: relative;
 
           height: 200px; // Default height
           padding-top: $nav-item-lg-height/2-$line-height-computed; // Default padding
@@ -93,6 +94,20 @@ body {
           text-align: center;
           background-size: cover;
           background-repeat: no-repeat;
+
+          span {
+            font-family: 'Stardos Stencil', cursive;
+            font-size: 35px;
+
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+
+            width: 100%;
+            text-align: left;
+
+            display: block;
+          }
 
           //Handy, Small-Device
           @media (max-width: $screen-sm-min) {
@@ -102,6 +117,7 @@ body {
 
           &#navi-container-long {
             background-image: url('../images/placeholder.jpg');
+            margin-bottom: 10px;
           }
           &#navi-container-small1 {
             background-image: url('../images/placeholder.jpg');
