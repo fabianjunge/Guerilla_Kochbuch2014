@@ -45,6 +45,8 @@ body {
     line-height: 45px;
     font-weight: bold;
     margin-bottom: 20px;
+
+    text-shadow: 1px 2px 2px #000000;
   }
 
   h3 {
@@ -52,6 +54,8 @@ body {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: bold;
+
+    text-shadow: 1px 2px 4px #000000;
   }
 
   #mainframe {
@@ -103,7 +107,6 @@ body {
             bottom: 20px;
             left: 20px;
 
-            width: 100%;
             text-align: left;
 
             display: block;
@@ -149,26 +152,20 @@ body {
     }
 
     section {
+      text-shadow: 1px 2px 2px #000000;
 
       &.contain-typ-1 {
         padding-top: 20px;
 
         article {
           padding-top: 20px;
-          padding-bottom: 20px;
-
-          @media (max-width: $screen-sm-min) {
-            background-color: green;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
+          padding-bottom: 30px;
 
           h2 {
             line-height: 30px;
           }
 
           p {
-            text-shadow: 2px 0px 4px #000;
             font-size: 25px;
             line-height: 35px;
           }
@@ -217,7 +214,6 @@ body {
 
       padding-bottom: 30px;
       color: white;
-      padding: 0px;
 
       //Content
       .right {
@@ -246,6 +242,14 @@ body {
             margin-right: auto;
 
             opacity: .9;
+
+            @media (max-width: $screen-sm-max) {
+              width: 40%;
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+              margin-bottom: 20px;
+            }
           }
 
           @media (min-width: $screen-sm-min) {
@@ -265,8 +269,17 @@ body {
       aside {
         margin: 0px;
 
-        @media (max-width: $screen-sm-max) {
-          display: none;
+        .recipes  {
+          width: 80%;
+          -webkit-box-shadow: 0 5px 10px 0 #080808;
+          box-shadow: 0 5px 10px 0 #080808;
+
+          @media (max-width: $screen-sm-max) {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
         }
       }
     }
