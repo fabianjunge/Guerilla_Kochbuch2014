@@ -93,15 +93,20 @@ body {
           position: relative;
 
           height: 200px; // Default height
-          padding-top: $nav-item-lg-height/2-$line-height-computed; // Default padding
+          //padding-top: $nav-item-lg-height/2-$line-height-computed; // Default padding
 
           text-align: center;
           background-size: cover;
           background-repeat: no-repeat;
 
+          -webkit-box-shadow: 0 5px 10px 0 #080808;
+          box-shadow: 0 5px 10px 0 #080808;
+          margin-bottom: 20px;
+
           span {
             font-family: 'Stardos Stencil', cursive;
             font-size: 35px;
+            color: white;
 
             position: absolute;
             bottom: 20px;
@@ -119,17 +124,21 @@ body {
           }
 
           &#navi-container-long {
-            background-image: url('../images/placeholder.jpg');
-            margin-bottom: 10px;
+            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
+
+            @media (min-width: $screen-md-min) {
+              height: 400px;
+              background-position: center;
+            }
           }
           &#navi-container-small1 {
-            background-image: url('../images/placeholder.jpg');
+            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
           }
           &#navi-container-small2 {
-            background-image: url('../images/placeholder.jpg');
+            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
           }
           &#navi-container-small3 {
-            background-image: url('../images/placeholder.jpg');
+            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
           }
         }
 
@@ -145,7 +154,6 @@ body {
           li {
             @include make-md-column(4, 0);
             @include make-lg-column(4, 0); // 0 padding, because the li element don't accepts any other
-
           }
         }
       }
