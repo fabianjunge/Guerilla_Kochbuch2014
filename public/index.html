@@ -6,6 +6,7 @@
     <title>Guerilla Kochbuch </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" type="image/png" href="./images/favicon.png" />
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
@@ -15,19 +16,19 @@
 <div id="mainframe">
     <header>
         <div class="logo">
-            <a href="/"><img src="./images/guerilla_kochbuch_logo.svg" alt="Logo Guerilla Kocbuch"></a>
+            <a href="./"><img src="./images/guerilla_kochbuch_logo.svg" alt="Logo Guerilla Kocbuch"></a>
             <img id="flame-animation" src="./images/flame-animation.gif" alt="Animation von einer Flamme">
             <h1>Guerilla Kochbuch</h1>
         </div>
         <!--START NAV -->
         <nav>
             <ul class="big" >
-                <li id="navi-container-long"><span>Die Grills für Kämpfer</span></li>
+                <li><a id="navi-container-long" href="./index.html#Leichtes"><span>Die Grills für Kämpfer</span></a></li>
             </ul>
             <ul class="small">
-                <li id="navi-container-small1"><span>Leichtes</span></li>
-                <li id="navi-container-small2"><span>Vegetarisches</span></li>
-                <li id="navi-container-small3"><span>Deftiges</span></li>
+                <li><a id="navi-container-small1" href="./index.html#Leichtes"><span>Leichtes</span></a></li>
+                <li><a id="navi-container-small2" href="./index.html#Vegetarisches"><span>Vegetarisches</span></a></li>
+                <li><a id="navi-container-small3" href="./index.html#Deftiges"><span>Deftiges</span></a></li>
             </ul>
         </nav>
         <!--END NAV -->
@@ -52,7 +53,7 @@
         <!-- START FIRST SECTION  -->
         <section  class="content-typ-2">
             <article>
-                <h2>Was leichtes vom Grill...</h2>
+                <h2 id="Leichtes">Was leichtes vom Grill...</h2>
                 <aside class="left">
                     <img class="recipes" src="./images/recipes/gefuellte_champignons_vom_grill.jpg" alt="Bild von super leckeren Champignons">
                     <h3>Tomate – Mozzarella – Baguette</h3>
@@ -91,7 +92,7 @@
                     <p>Optional kann dieses Gericht auch als Salat zubereitet werden. Hierfür einfach Tomate, Zwiebeln und Mozzarella würfeln. In eine Schale zusammen geben und mit dem Salatdressing unterrühren. Ein paar Minuten ziehen lassen. Zeitaufwand: 10 min</p>
 
                     <h3>Gefüllte Champignons</h3>
-                    <p>Vorsichtig die Stiele aus den geputzten (z.B. mit Küchenkrepp)Champignons entfernen. Den Feta – Käse in kleine Würfel schneiden oder zerbröckeln, außerdem die Petersilie und n.B. den Schnittlauch klein schneiden. Alles vermischen und würzen.
+                    <p>Vorsichtig die Stiele aus den geputzten (z.B. mit Küchenkrepp)Champignons entfernen. Den Feta – Käse in kleine Würfel schneiden oder zerbröckeln, außerdem die Petersilie und n.B. den Schnittlauch klein schneiden. Alles vermischen und würzen.
 
                     <p>Die Pilze erst einmal mit der offenen Seite für ca. 3 Minuten auf den Grill legen. Nun den Feta in die Champignons füllen und mit der Unterseite auf den Grill legen, Wenn der Käse geschmolzen ist, können die Pilze vom Grill genommen werden. Zeitaufwand: ca. 15 min</p>
                     
@@ -112,10 +113,10 @@
        <!-- START SECOND SECTION  -->
         <section  class="content-typ-2">
             <article>
-                <h2>Was vegetarisches...</h2>
+                <h2 id="Vegetarisches">Was vegetarisches...</h2>
                 <aside class="left">
                     <img class="recipes" src="./images/recipes/gemuesepaeckchen_fuer_den_grill.jpg" alt="Bild von super leckeren Gemuesepäckchen für den Grill">
-                    <h3>Gemuesepäckchen</h3>
+                    <h3>Gemüsepäckchen</h3>
                     <ul class="makings">
                         <li>1 Zucchini</li>
                         <li>1 Bündel Tomaten</li>
@@ -151,10 +152,10 @@
        <!-- START THIRD SECTION  -->
         <section  class="content-typ-2">
             <article>
-                <h2>Was deftiges...</h2>
+                <h2 id="Deftiges">Was deftiges...</h2>
                 <aside class="left">
-                    <img class="recipes" src="./images/recipes/grillkartoffeln_zzatziki.jpg" alt="Bild von super leckeren Grillkartoffeln mit Tzatziki">
-                    <h3>Gemuesepäckchen</h3>
+                    <img class="recipes" src="./images/recipes/grillkartoffeln_tzatziki.jpg" alt="Bild von super leckeren Grillkartoffeln mit Tzatziki">
+                    <h3>Tsaziki</h3>
                     <ul class="makings">
                         <li>250 g Quark, 20 %</li>
                         <li>1 Becher Creme fraiche</li>
@@ -195,6 +196,23 @@
             </article>
         </section>
         <!-- END THIRD SECTION  -->
+        <div class="separator-star">
+            <img src="./images/guerilla_kochbuch_seperator_star.svg" alt="Stern">
+        </div>
+        <!-- END FOOTER SECTION  -->
+        <section class="content-typ-1" id="footer">
+        <article>
+            <aside class="left">
+                <ul>
+                  <li><a class="zocial-twitter" href="https://twitter.com/guerillabook"></a></li>
+                  <li><a class="zocial-facebook" href="https://www.facebook.com/pages/guerilla-kochbuchde/718025171582714"></a></li>
+                </ul>
+            </aside>
+            <section class="right">
+                <a href="#">Impressium</a>
+            </section>    
+        </article>
+    </section>
     </main>
 </div>
 </body>

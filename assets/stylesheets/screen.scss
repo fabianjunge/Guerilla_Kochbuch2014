@@ -8,6 +8,7 @@
 
 @import url("http://fonts.googleapis.com/css?family=Stardos+Stencil:400,700");
 @import url("http://fonts.googleapis.com/css?family=PT+Serif:400,700");
+@import url("http://weloveiconfonts.com/api/?family=zocial");
 
 
 /**
@@ -58,6 +59,11 @@ body {
     text-shadow: 1px 2px 4px #000000;
   }
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   #mainframe {
     header {
       @include make-container-fluid;
@@ -89,7 +95,8 @@ body {
         $nav-item-lg-height: 200px;
 
         //Global properties for alle entrys in the nav
-        li {
+        li a {
+          display: block;
           position: relative;
 
           height: 200px; // Default height
@@ -104,6 +111,8 @@ body {
           margin-bottom: 20px;
 
           span {
+            text-shadow: 1px 2px 1px #000000;
+
             font-family: 'Stardos Stencil', cursive;
             font-size: 35px;
             color: white;
@@ -124,7 +133,11 @@ body {
           }
 
           &#navi-container-long {
-            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
+            background-image: url('../images/navi/guerilla_kochbuch_navi-container-long.jpg');
+
+            &:hover {
+              background-image: url('../images/navi/guerilla_kochbuch_navi-container-long-hover.jpg');
+            }
 
             @media (min-width: $screen-md-min) {
               height: 400px;
@@ -132,13 +145,29 @@ body {
             }
           }
           &#navi-container-small1 {
-            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
+            background-image: url('../images/navi/gefuellte_champignons_vom_grill.jpg');
+            margin-right: 5px;
+
+            &:hover {
+              background-image: url('../images/navi/gefuellte_champignons_vom_grill-hover.jpg');
+            }
           }
           &#navi-container-small2 {
-            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
+            background-image: url('../images/navi/gemuesepaeckchen_fuer_den_grill.jpg');
+            margin-left: 5px;
+            margin-right: 5px;
+
+            &:hover {
+              background-image: url('../images/navi/gemuesepaeckchen_fuer_den_grill-hover.jpg');
+            }
           }
           &#navi-container-small3 {
-            background-image: url('../images/guerilla_kochbuch_navi-container-long.jpg');
+            margin-left: 5px;
+            background-image: url('../images/navi/grillkartoffeln_tzatziki.jpg');
+
+            &:hover {
+              background-image: url('../images/navi/grillkartoffeln_tzatziki-hover.jpg');
+            }
           }
         }
 
@@ -197,7 +226,7 @@ body {
 
         h2 {
           color: #7d0d0d;
-           text-transform: uppercase;
+          text-transform: uppercase;
         }
 
         h3 {
@@ -292,7 +321,31 @@ body {
       }
     }
 
+    #footer {
+      margin-top: 20px;
 
+      .right {
+        text-align: right;
+
+        @media (max-width: $screen-sm-max) {
+          text-align: center;
+        }
+      }
+
+      .left {
+        @media (max-width: $screen-sm-max) {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          li {
+            display: inline-block;
+            font-size: 20px;
+          }
+        }
+      }
+    }
 
     /**
     * Style for separation line
@@ -314,3 +367,13 @@ body {
     
   }
 }
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  margin-right: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+
