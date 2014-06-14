@@ -6,6 +6,8 @@
 @import "vendor/bootstrap/mixins";
 @import "variables";
 
+@import "vendor/bootstrap/bootstrap";
+
 @import url("http://fonts.googleapis.com/css?family=Stardos+Stencil:400,700");
 @import url("http://fonts.googleapis.com/css?family=PT+Serif:400,700");
 @import url("http://weloveiconfonts.com/api/?family=zocial");
@@ -83,6 +85,13 @@ body {
 
       #flame-animation {
         display: none;
+      }
+      article {
+        aside {
+          &.left {
+
+          }
+        }
       }
     }
 
@@ -224,6 +233,7 @@ body {
           }
         }
 
+
         h2 {
           color: #7d0d0d;
           text-transform: uppercase;
@@ -252,8 +262,62 @@ body {
       padding-bottom: 30px;
       color: white;
 
+
+      //For mobile devices display a collapse menu
+      .panel{
+        //Display only on xs devices
+        display: none;
+        @media (max-width: $screen-xs-max) {
+          display: block!important;
+          display:table-cell;
+        }
+
+        background-color: $guerilla-section-first-dish-bg;
+
+
+        h2,h1,h3,h4,h5,h6 {
+          padding: 15px;
+          margin-bottom: 0px;
+        }
+        margin-top: 5px;
+
+        &:hover {
+          background-color: darken($guerilla-section-first-dish-bg,10%) ;
+        }
+
+      }
+      .panel-collapse {
+        @media (max-width: $screen-xs-max) {
+          background-color: rgba(51,50,48,0.5);//#333230
+          border: 2px solid $guerilla-section-first-dish-bg;
+
+          h3,p {
+            padding: 10px;
+          }
+          margin-top: 0px;
+          ul {
+            li {
+              margin: 10px;
+
+              &.inCard {
+                list-style: none;
+                &:before {
+                  content: ' \2713 ';
+                  color: greenyellow;
+                  padding-right: 5px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
       //Content
       .right {
+        @media (max-width: $screen-xs-max) {
+
+        }
         @include make-xs-column(12, 0);
         @include make-sm-column(12, 0);
         @include make-md-column(7, 0);
@@ -263,60 +327,53 @@ body {
       .left {
         @include make-md-column(5, 0);
         @include make-lg-column(5, 0);
-
-        //Responsive image width
-        /**
-        *
-        * Example for lg screens: $container-lg/$grid-columns*3-10 =>   1200  /   12  *   3                   -10
-        *                                                              [Column width ]    emmit make-row(3)   Because some place for margin
-        */
-        img {
-          //width: 80%;
-
-          &.content-icon-fist {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-
-            opacity: .9;
-
-            @media (max-width: $screen-sm-max) {
-              width: 40%;
-              margin-left: auto;
-              margin-right: auto;
-              display: block;
-              margin-bottom: 20px;
-            }
-          }
-
-          @media (min-width: $screen-sm-min) {
-            max-width: $container-sm/$grid-columns*3-10;
-          }
-          @media (min-width: $screen-md-min) {
-            max-width: $container-md/$grid-columns*3-10;
-          }
-          @media (min-width: $screen-lg-min) {
-            max-width: $container-lg/$grid-columns*3-10;
-
-          }
-        }
       }
+      //Responsive image width
+      /**
+      *
+      * Example for lg screens: $container-lg/$grid-columns*3-10 =>   1200  /   12  *   3                   -10
+      *                                                              [Column width ]    emmit make-row(3)   Because some place for margin
+      */
+      img {
+        //width: 80%;
 
-      //Image or some other aditional information
-      aside {
-        margin: 0px;
-
-        .recipes  {
+        &.recipes  {
           width: 80%;
           -webkit-box-shadow: 0 5px 10px 0 #080808;
           box-shadow: 0 5px 10px 0 #080808;
 
-          @media (max-width: $screen-sm-max) {
-            width: 90%;
+          @media (max-width: $screen-xs-max) {
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
             display: block;
           }
+        }
+
+        &.content-icon-fist {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          opacity: .9;
+
+          @media (max-width: $screen-sm-max) {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+
+        @media (min-width: $screen-sm-min) {
+          max-width: $container-sm/$grid-columns*5-10;
+        }
+        @media (min-width: $screen-md-min) {
+          max-width: $container-md/$grid-columns*5-10;
+        }
+        @media (min-width: $screen-lg-min) {
+          max-width: $container-lg/$grid-columns*5-10;
+
         }
       }
     }

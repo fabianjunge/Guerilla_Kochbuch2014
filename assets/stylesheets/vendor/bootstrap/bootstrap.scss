@@ -1,7 +1,7 @@
 // Core variables and mixins
 
-//@import "variables";
-//@import "mixins";
+@import "variables";
+@import "mixins";
 
 // Reset and dependencies
 //@import "normalize";
@@ -18,7 +18,7 @@
 //@import "buttons";
 
 // Components
-//@import "component-animations";
+@import "component-animations";
 //@import "dropdowns";
 //@import "button-groups";
 //@import "input-groups";
@@ -41,11 +41,11 @@
 //@import "close";
 
 // Components w/ JavaScript
-//@import "modals";
-//@import "tooltip";
-//@import "popovers";
-//@import "carousel";
+@import "modals";
+@import "tooltip";
+@import "popovers";
+@import "carousel";
 
 // Utility classes
-//@import "utilities";
-//@import "responsive-utilities";
+@import "utilities";
+@import "responsive-utilities";

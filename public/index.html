@@ -6,7 +6,10 @@
     <title>Guerilla Kochbuch </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <script src="javascripts/vendor/jquery/jquery.js" ></script>
+    <script src="javascripts/vendor/bootstrap/bootstrap.js" ></script>
+    <script src="javascripts/vendor/jquery.scrollTo/jquery.scrollTo.js" ></script>
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
@@ -23,12 +26,12 @@
         <!--START NAV -->
         <nav>
             <ul class="big" >
-                <li><a id="navi-container-long" href="./index.html#Leichtes"><span>Die Grills für Kämpfer</span></a></li>
+                <li><a id="navi-container-long" href="#Leichtes"><span>Die Grills für Kämpfer</span></a></li>
             </ul>
             <ul class="small">
-                <li><a id="navi-container-small1" href="./index.html#Leichtes"><span>Leichtes</span></a></li>
-                <li><a id="navi-container-small2" href="./index.html#Vegetarisches"><span>Vegetarisches</span></a></li>
-                <li><a id="navi-container-small3" href="./index.html#Deftiges"><span>Deftiges</span></a></li>
+                <li><a id="navi-container-small1" href="#Leichtes"><span>Leichtes</span></a></li>
+                <li><a id="navi-container-small2" href="#Vegetarisches"><span>Vegetarisches</span></a></li>
+                <li><a id="navi-container-small3" href="#Deftiges"><span>Deftiges</span></a></li>
             </ul>
         </nav>
         <!--END NAV -->
@@ -51,38 +54,51 @@
     </div>
     <main>
         <!-- START FIRST SECTION  -->
-        <section  class="content-typ-2">
+        <section  class="content-typ-2 panel-group">
             <article>
-                <h2 id="Leichtes">Was leichtes vom Grill...</h2>
+                <h2 id="Leichtes">Was leichtes...</h2>
                 <aside class="left">
                     <img class="recipes" src="./images/recipes/gefuellte_champignons_vom_grill.jpg" alt="Bild von super leckeren Champignons">
-                    <h3>Tomate – Mozzarella – Baguette</h3>
-                    <ul class="makings">
-                        <li>1 Bündel Tomaten</li>
-                        <li>1 Kugel Mozzarella</li>
-                        <li>n.B. 1 Zwiebel</li>
-                        <li>Basilikum</li>
-                        <li>Salz, Pfeffer, Gartenkräuter</li>
-                        <li>Ciabbatta Baguette</li>
-                        <li>Optional: italienische Kräuter Salatdressing</li>
-                    </ul>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#Leichtes" href="#Einkaufsliste">
+                            <h3 class="panel-title">Einkaufsliste</h3>
+                        </div>
+                    </div>
+                    <div id="Einkaufsliste" class="panel-collapse">
+                        <h3>Tomate – Mozzarella – Baguette</h3>
+                        <ul class="makings">
+                            <li>1 Bündel Tomaten</li>
+                            <li>1 Kugel Mozzarella</li>
+                            <li>n.B. 1 Zwiebel</li>
+                            <li>Basilikum</li>
+                            <li>Salz, Pfeffer, Gartenkräuter</li>
+                            <li>Ciabbatta Baguette</li>
+                            <li>Optional: italienische Kräuter Salatdressing</li>
+                        </ul>
 
-                    <h3>Gefüllte Champignons</h3>
-                    <ul class="makings">
-                        <li>8 große Champignons</li>
-                        <li>200g Feta – Käse</li>
-                        <li>1⁄2 Bund Petersilie</li>
-                        <li>Pfeffer</li>
-                        <li>Olivenöl</li>
-                        <li>n.B. Schnittlauch</li>
-                    </ul>
+                        <h3>Gefüllte Champignons</h3>
+                        <ul class="makings">
+                            <li>8 große Champignons</li>
+                            <li>200g Feta – Käse</li>
+                            <li>1⁄2 Bund Petersilie</li>
+                            <li>Pfeffer</li>
+                            <li>Olivenöl</li>
+                            <li>n.B. Schnittlauch</li>
+                        </ul>
 
-                    <h3>Fleischbeilage</h3>
-                    <ul class="makings">
-                        <li>Putenfleisch</li>
-                    </ul>
+                        <h3>Fleischbeilage</h3>
+                        <ul class="makings">
+                            <li>Putenfleisch</li>
+                        </ul>
+                    </div >
                 </aside>
-                <section class="right">
+                <div class="panel panel-default">
+                    <div class="panel-heading" data-toggle="collapse" data-parent="#Leichtes" href="#Zubereitung">
+                        <h3 class="panel-title"> Zubereitung
+                        </h3>
+                    </div>
+                </div>
+                <section id="Zubereitung" class="right panel-collapse">
                     <h3>Tomate – Mozzarella – Baguette</h3>
                     <p>Für die Baguettes werden die Tomaten und der Mozzarella in Scheiben geschnitten. Wenn gewünscht, die Zwiebeln in Würfel schneiden. Baguette zunächst im Backofen aufbacken und danach kurz auf den Grill legen um es perfekt knusprig zu servieren.</p>
 
@@ -95,7 +111,7 @@
                     <p>Vorsichtig die Stiele aus den geputzten (z.B. mit Küchenkrepp)Champignons entfernen. Den Feta – Käse in kleine Würfel schneiden oder zerbröckeln, außerdem die Petersilie und n.B. den Schnittlauch klein schneiden. Alles vermischen und würzen.
 
                     <p>Die Pilze erst einmal mit der offenen Seite für ca. 3 Minuten auf den Grill legen. Nun den Feta in die Champignons füllen und mit der Unterseite auf den Grill legen, Wenn der Käse geschmolzen ist, können die Pilze vom Grill genommen werden. Zeitaufwand: ca. 15 min</p>
-                    
+
                     <p>Bevor die Champignons umkippen, kann man mit Alufolie einem möglichen Unglück vorbeugen, indem man diese einfach unter die Pilze auf den Grill legt.</p>
                     </p>
 
@@ -214,6 +230,7 @@
         </article>
     </section>
     </main>
+    <script src="javascripts/main.js"></script>
 </div>
 </body>
 </html>
