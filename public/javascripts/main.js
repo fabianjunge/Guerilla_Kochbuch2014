@@ -53,7 +53,6 @@ $(function () {
         return $(window).width()<sassVars['$screen-xs-max']
     }
     $(window).resize(function () {
-        console.log("TEEEST")
         var add = false;
         //If phone => Collapse all articles
         if(isPhone()){
@@ -88,5 +87,18 @@ $(function () {
         $.scrollTo(href,1000);
 
     })
+
+
+    /**
+     * Swipebox support
+     */
+    $( '.swipebox' ).swipebox({
+        afterClose: function(){
+            console.log(arguments)
+        }
+    });
+
+
+
     $(window).trigger("resize")
 })
