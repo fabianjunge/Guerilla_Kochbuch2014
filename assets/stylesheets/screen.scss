@@ -83,7 +83,6 @@ body {
           width: 200px;
         }
         text-align: center;
-        //Change size of the logo if the page is printed
       }
       .star {
         height: 75px!important;
@@ -94,17 +93,9 @@ body {
       #flame-animation {
         display: none;
       }
-      article {
-        aside {
-          &.left {
-
-          }
-        }
-      }
     }
 
     nav {
-
       padding-bottom: 20px;
 
       ul {
@@ -160,10 +151,18 @@ body {
               height: 400px;
               background-position: center;
             }
+
+            @media (max-width: $screen-md-min) {
+              margin: 0px;
+            }
           }
           &#navi-container-small1 {
             background-image: url('../images/navi/gefuellte_champignons_vom_grill.jpg');
-            margin-right: 5px;
+            margin-right: 10px;
+
+            @media (max-width: $screen-md-min) {
+              margin: 0px;
+            }
 
             &:hover {
               background-image: url('../images/navi/gefuellte_champignons_vom_grill-hover.jpg');
@@ -171,16 +170,24 @@ body {
           }
           &#navi-container-small2 {
             background-image: url('../images/navi/gemuesepaeckchen_fuer_den_grill.jpg');
-            margin-left: 5px;
-            margin-right: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            @media (max-width: $screen-md-min) {
+              margin: 0px;
+            }
 
             &:hover {
               background-image: url('../images/navi/gemuesepaeckchen_fuer_den_grill-hover.jpg');
             }
           }
           &#navi-container-small3 {
-            margin-left: 5px;
             background-image: url('../images/navi/grillkartoffeln_tzatziki.jpg');
+            margin-left: 10px;
+
+            @media (max-width: $screen-md-min) {
+              margin: 0px;
+            }
 
             &:hover {
               background-image: url('../images/navi/grillkartoffeln_tzatziki-hover.jpg');
@@ -209,19 +216,17 @@ body {
       text-shadow: 1px 2px 2px #000000;
 
       &.content-typ-1 {
-        padding-top: 20px;
 
         article {
-          padding-top: 20px;
-          //padding-bottom: 40px;
-
           h2 {
-            line-height: 30px;
+            line-height: 45px;
           }
 
           p {
             font-size: 25px;
             line-height: 35px;
+
+            margin-bottom: 20px;
 
             &:last-child {
               margin-bottom: 50px;
@@ -237,12 +242,13 @@ body {
         background-image: url('../images/guerilla_kochbuch_bg_content-typ2.jpg');
         background-position: center top;
 
+        /*
         article {
           @media (max-width: $screen-sm-min) {
             padding-left: 20px;
             padding-right: 20px;
           }
-        }
+        }*/
 
 
         h2 {
@@ -254,9 +260,16 @@ body {
           font-family: 'Stardos Stencil', cursive;
           font-size: 28px;
 
+          margin-top: 30px;
+
           &:first-child {
             margin-top: 0px;
           }
+        }
+
+        p {
+          margin-bottom: 20px;
+          text-align: justify;
         }
 
         .makings {
@@ -338,20 +351,15 @@ body {
         }
         @include make-xs-column(12, 0);
         @include make-sm-column(12, 0);
-        @include make-md-column(8, 0);
-        @include make-lg-column(8, 0);
+        @include make-md-column(7, 0);
+        @include make-lg-column(7, 0);
       }
 
       .left {
-        @include make-md-column(4, 0);
-        @include make-lg-column(4, 0);
+        @include make-md-column(5, 0);
+        @include make-lg-column(5, 0);
       }
-      //Responsive image width
-      /**
-      *
-      * Example for lg screens: $container-lg/$grid-columns*3-10 =>   1200  /   12  *   3                   -10
-      *                                                              [Column width ]    emmit make-row(3)   Because some place for margin
-      */
+      
       img {
         //width: 80%;
 
@@ -401,7 +409,8 @@ body {
     }
 
     #footer {
-      margin-top: 20px;
+      margin-top: 15px;
+      margin-bottom: 15px;
 
       .right {
         text-align: right;
@@ -442,11 +451,11 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
 
         position: relative;
-        top: -37.5px
+        top: -25px
       }
     }
     
@@ -454,7 +463,6 @@ body {
 }
 
 #content-bbq {
-
   #Grills {
     text-align: center;
   }
