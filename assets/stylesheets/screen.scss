@@ -47,7 +47,7 @@ body {
   h2 {
     font-family: 'Stardos Stencil', cursive;
 
-    font-size: 40px;
+    font-size: 43px;
     line-height: 45px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -140,6 +140,11 @@ body {
             padding-top: $nav-item-lg-height/4-$line-height-computed;
           }
 
+          @media (min-width: $screen-xs-max) {
+            margin-left: 10px!important;
+            margin-right: 10px!important;
+          }
+
           &#navi-container-long {
             background-image: url('../images/navi/guerilla_kochbuch_navi-container-long.jpg');
 
@@ -152,16 +157,13 @@ body {
               background-position: center;
             }
 
-            @media (max-width: $screen-md-min) {
-              margin: 0px;
-            }
           }
           &#navi-container-small1 {
             background-image: url('../images/navi/gefuellte_champignons_vom_grill.jpg');
-            margin-right: 10px;
 
-            @media (max-width: $screen-md-min) {
-              margin: 0px;
+
+            @media (min-width: $screen-xs-max) {
+              margin-right: 10px;
             }
 
             &:hover {
@@ -170,23 +172,18 @@ body {
           }
           &#navi-container-small2 {
             background-image: url('../images/navi/gemuesepaeckchen_fuer_den_grill.jpg');
-            margin-left: 10px;
-            margin-right: 10px;
-
-            @media (max-width: $screen-md-min) {
-              margin: 0px;
+            @media (min-width: $screen-md-max) {
+              margin-right: 10px;
             }
-
             &:hover {
               background-image: url('../images/navi/gemuesepaeckchen_fuer_den_grill-hover.jpg');
             }
           }
           &#navi-container-small3 {
             background-image: url('../images/navi/grillkartoffeln_tzatziki.jpg');
-            margin-left: 10px;
 
-            @media (max-width: $screen-md-min) {
-              margin: 0px;
+            @media (min-width: $screen-xs-max) {
+              margin-left: 10px;
             }
 
             &:hover {
@@ -252,7 +249,7 @@ body {
 
 
         h2 {
-          color: #7d0d0d;
+          color: #a30000;
           text-transform: uppercase;
         }
 
@@ -369,7 +366,7 @@ body {
           box-shadow: 0 5px 10px 0 #080808;
           margin-bottom: 15px;
 
-          @media (max-width: $screen-xs-max) {
+          @media (max-width: $screen-sm-max) {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
@@ -395,9 +392,7 @@ body {
           }
         }
 
-        @media (min-width: $screen-sm-min) {
-          max-width: $container-sm/$grid-columns*5-10;
-        }
+
         @media (min-width: $screen-md-min) {
           max-width: $container-md/$grid-columns*5-10;
         }
@@ -473,13 +468,16 @@ body {
       @include make-md-column(4, 0);
       @include make-lg-column(4, 0);
 
+      @media (max-width: $screen-sm-max) {
+        width: 100%;
+      }
+
       h3 {
         text-align: center;
         margin: 30px;
       }
 
       p {
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -488,13 +486,9 @@ body {
 
         margin-bottom: 30px;
 
-        @media (max-width: $screen-xs-max) {
-          width: 100%;
-        }
       }
 
       img {
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -502,9 +496,6 @@ body {
         -webkit-box-shadow: 0 5px 10px 0 #080808;
         box-shadow: 0 5px 10px 0 #080808;
 
-        @media (max-width: $screen-xs-max) {
-            width: 100%;
-        }
       }
   }
 }
