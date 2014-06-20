@@ -84,7 +84,11 @@ $(function () {
     $('nav').find("a").on("click", function(e){
         e.preventDefault();
         href = $(this).attr('href')
-        $.scrollTo(href,1000);
+        $.scrollTo(href,1000, {
+            offset: {
+                top: -20
+            }
+        });
 
     })
 
