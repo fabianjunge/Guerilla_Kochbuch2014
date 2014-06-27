@@ -53,6 +53,13 @@ body {
     margin-bottom: 20px;
 
     text-shadow: 1px 2px 2px #000000;
+
+
+    @media (max-width: $screen-xs-max) {
+      word-wrap: break-word;
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 
   h3 {
@@ -254,7 +261,6 @@ body {
         h2 {
           color: #7d0d0d;
           text-transform: uppercase;
-          word-break: break-all;
         }
 
         h3 {
