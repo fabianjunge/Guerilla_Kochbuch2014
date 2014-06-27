@@ -254,6 +254,7 @@ body {
         h2 {
           color: #7d0d0d;
           text-transform: uppercase;
+          word-break: break-all;
         }
 
         h3 {
@@ -273,8 +274,12 @@ body {
         }
 
         .makings {
-          padding-left: 20px;
-          list-style-image: url('../images/guerilla_kochbuch_listicon.svg');
+          li {
+            background-image: url('../images/guerilla_kochbuch_listicon.png');
+            background-repeat: no-repeat;
+            background-position: 0,0;
+            padding-left: 30px;
+          }
         }
 
       }
