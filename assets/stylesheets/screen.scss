@@ -478,8 +478,8 @@ body {
       }
 
       p {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
         display: block;
         font-size: 18px;
         text-align: justify;
@@ -489,6 +489,7 @@ body {
       }
 
       img {
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
         display: block;
