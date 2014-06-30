@@ -93,6 +93,10 @@ $(function () {
     })
 
 
+    $('.panel-heading').on("click", function() {
+        console.log("hasjkdaskjd");
+    });
+
     /**
      * Swipebox support
      */
