@@ -53,6 +53,13 @@ body {
     margin-bottom: 20px;
 
     text-shadow: 1px 2px 2px #000000;
+
+
+    @media (max-width: $screen-xs-max) {
+      word-wrap: break-word;
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 
   h3 {
@@ -270,8 +277,12 @@ body {
         }
 
         .makings {
-          padding-left: 20px;
-          list-style-image: url('../images/guerilla_kochbuch_listicon.svg');
+          li {
+            background-image: url('../images/guerilla_kochbuch_listicon.png');
+            background-repeat: no-repeat;
+            background-position: 0,0;
+            padding-left: 30px;
+          }
         }
 
       }
